@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Dawg</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;   
+        }
+
+        #imageBox {
+            max-height: 70vh;
+            max-width: 50%;
+        }
+
+        .anotherDogBtn {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .alertContainer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(1,1,1,0.5);
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+
+        .innerAlert {
+            background: #fff;
+            padding: 15px;
+            border-radius: 16px;
+            box-shadow: 4px 4px 8px #545454;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button {
+            padding: 10px;
+            background: #163e18;
+            color: #fff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Having a bad day?<br>Maybe a picture of a funny dog will cheer you up!</h1>
+        <img src="" alt="Doggy McDogface" id="imageBox">
+        <button class="anotherDogBtn">Show me another one!</button>
+    </div>
+    <div class="alertContainer">
+        <div class="innerAlert">
+            <h1 class="alertText"></h1>
+            <button class="anotherDogBtn">Just shut up and show me another dog!</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
